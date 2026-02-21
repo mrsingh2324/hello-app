@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: node-hello-container
-        image: <+artifact.image>
+        image: {{ .Values.image }}
         ports:
         - containerPort: 3000
